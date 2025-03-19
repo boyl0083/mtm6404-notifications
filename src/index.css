@@ -56,6 +56,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Light Mode Styles */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -67,4 +68,47 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Notification Styles */
+.notification {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.notification button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notification button:hover {
+  background-color: #c0392b;
+}
+
+/* Clear All Button */
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
 }
